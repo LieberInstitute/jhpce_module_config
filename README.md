@@ -2,7 +2,7 @@
 
 This repository contains the [Lmod module](https://lmod.readthedocs.io/) configuration files (`.lua`) for modules contributed to [JHPCE](http://www.jhpce.jhu.edu/) by members of the Data Science team lead by [Andrew E. Jaffe](http://aejaffe.com/) at the [Lieber Institute for Brain Development](https://www.libd.org/).
 
-The source files are hosted in the [jhpce_module_source](https://github.com/LieberInstitute/jhpce_module_source) GitHub repository.
+The source files are hosted in the [jhpce_mod_source](https://github.com/LieberInstitute/jhpce_mod_source) GitHub repository.
 
 # Questions
 
@@ -50,13 +50,15 @@ $ module avail
 Without loading the module, we don't see HISAT2 on the `$PATH` environment variable.
 
 ```bash
-$ which hisat
-/usr/bin/which: no hisat in (deleted output)
+$ which hisat2
+/usr/bin/which: no hisat2 in (deleted output)
 ```
 
 If we load the module, then we find HISAT2 in the `$PATH` and we can start using it.
 
 ```bash
+$ module use /jhpce/shared/jhpce/modulefiles/libd
+$ module load hisat2/2.0.4
 $ which hisat2
 /jhpce/shared/jhpce/libd/hisat2/2.0.4/hisat2-2.0.4/hisat2
 $ hisat2 --version
