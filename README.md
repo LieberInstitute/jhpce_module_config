@@ -111,7 +111,7 @@ __Step 3.__ Edit the `.lua` file you just created and test it. As an example, ch
 __Step 4.__ Make sure that the permissions are set correctly at the end.
 
 ```bash
-chmod 755 -R hisat2
+chmod 775 -R hisat2
 ```
 
 
