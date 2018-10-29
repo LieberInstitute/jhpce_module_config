@@ -111,6 +111,7 @@ __Step 3.__ Edit the `.lua` file you just created and test it. As an example, ch
 __Step 4.__ Make sure that the permissions are set correctly at the end.
 
 ```bash
+## Use 7 for group: so Emily and Leo can edit the files
 chmod 775 -R hisat2
 ```
 
