@@ -5,7 +5,7 @@ help([[
 This module loads regtools version 0.5.0.
 ]])
 
-whatis("HISAT2")
+whatis("regtools")
 
 if not string.match(os.getenv("HOSTNAME"),"compute") and not  string.match(os.getenv("HOSTNAME"),"transfer") then  
     LmodError("\
