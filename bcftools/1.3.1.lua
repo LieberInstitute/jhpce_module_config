@@ -14,5 +14,5 @@ end
 
 LmodMessage("Loading LIBD module for BCFTools/1.3.1")
 prepend_path("PATH", "/jhpce/shared/jhpce/libd/bcftools/1.3.1/bin/bin")
-prepend_path("MANPATH","/jhpce/shared/jhpce/libd/bcftools/1.3.1/bin/share/man")
+prepend_path("MANPATH","/jhpce/shared/jhpce/libd/bcftools/1.3.1/bin/share/man/man1")
 
