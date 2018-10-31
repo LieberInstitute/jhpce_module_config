@@ -13,4 +13,4 @@ This package can only be loaded on a compute or transfer node. Please use qrsh t
 end
 
 LmodMessage("Loading LIBD module for kallisto/0.43.0")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/kallisto/0.43.0/kallisto_linux-v0.43.0/kallisto")
+prepend_path("PATH", "/jhpce/shared/jhpce/libd/kallisto/0.43.0/kallisto_linux-v0.43.0")
