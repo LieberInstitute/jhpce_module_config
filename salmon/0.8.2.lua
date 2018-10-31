@@ -13,4 +13,4 @@ This package can only be loaded on a compute or transfer node. Please use qrsh t
 end
 
 LmodMessage("Loading LIBD module for Salmon/0.8.2")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/Salmon/0.8.2/Salmon-0.8.2_linux_x86_64/bin/salmon")
+prepend_path("PATH", "/jhpce/shared/jhpce/libd/Salmon/0.8.2/Salmon-0.8.2_linux_x86_64/bin")
