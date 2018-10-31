@@ -13,4 +13,5 @@ This package can only be loaded on a compute or transfer node. Please use qrsh t
 end
 
 LmodMessage("Loading LIBD module for Trimmomatic/0.38")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/Trimmomatic/0.38/Trimmomatic-0.38/trimmomatic-0.38.jar")
+prepend_path("PATH", "/jhpce/shared/jhpce/libd/Trimmomatic/0.38/Trimmomatic-0.38")
+prepend_path("PATH", "/jhpce/shared/jhpce/libd/Trimmomatic/0.38/Trimmomatic-0.38/adapters")
