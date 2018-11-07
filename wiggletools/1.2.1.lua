@@ -14,3 +14,4 @@ end
 
 LmodMessage("Loading LIBD module for WiggleTools/1.2.1")
 prepend_path("PATH", "/jhpce/shared/jhpce/libd/wiggletools/1.2.1/WiggleTools/bin")
+prepend_path("LD_LIBRARY_PATH", "/jhpce/shared/jhpce/libd/wiggletools/1.2.1/lib")
