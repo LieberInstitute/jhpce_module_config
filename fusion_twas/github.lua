@@ -15,3 +15,6 @@ end
 LmodMessage("Loading LIBD module for fusion_twas/github")
 load('plink/1.90b6.6')
 prepend_path("PATH", "/jhpce/shared/jhpce/libd/fusion_twas/github/fusion_twas")
+
+LmodMessage("See /jhpce/shared/jhpce/libd/fusion_twas/github/README.md for installing the R dependencies")
+LmodMessage("Run using the full path, for example: Rscript /jhpce/shared/jhpce/libd/fusion_twas/github/fusion_twas/FUSION.compute_weights.R --help")
