@@ -15,4 +15,3 @@ end
 LmodMessage("Loading LIBD module for git-lfs/2.8.0")
 load('git')
 prepend_path("PATH", "/jhpce/shared/jhpce/libd/git-lfs/2.8.0/git-lfs-files")
-LmodMessage("Run `git lfs help` to see how to use git-lfs")
