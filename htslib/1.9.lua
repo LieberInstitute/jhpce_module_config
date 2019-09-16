@@ -5,7 +5,7 @@ help([[
 This module loads htslib version 1.9.
 ]])
 
-whatis("BCFTools")
+whatis("htslib")
 
 if not string.match(os.getenv("HOSTNAME"),"compute") and not  string.match(os.getenv("HOSTNAME"),"transfer") then  
     LmodError("\
@@ -15,4 +15,5 @@ end
 LmodMessage("Loading LIBD module for htslib/1.9")
 prepend_path("PATH", "/jhpce/shared/jhpce/libd/htslib/1.9/bin")
 prepend_path("MANPATH","/jhpce/shared/jhpce/libd/htslib/1.9/share/man/man1")
-
+prepend_path("LD_LIBRARY_PATH", "/jhpce/shared/jhpce/libd/htslib/1.9/lib")
+prepend_path("C_INCLUDE_PATH", "/jhpce/shared/jhpce/libd/htslib/1.9/include")
