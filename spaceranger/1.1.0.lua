@@ -11,5 +11,4 @@ This package can only be loaded on a compute or transfer node. Please use qrsh t
 end
 
 LmodMessage("Loading LIBD module for spaceranger/1.1.0")
-load('python/2.7')
 prepend_path("PATH", "/jhpce/shared/jhpce/libd/spaceranger/1.1.0/spaceranger-1.1.0")
