@@ -14,4 +14,4 @@ end
 
 LmodMessage("Loading LIBD module for qtl_gtex")
 load("python/3.7.3")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/gtex-pipeline/qtl/src")
+prepend_path("PATH", "/jhpce/shared/jhpce/libd/gtex-pipeline/dae3369/gtex-pipeline/qtl/src")
