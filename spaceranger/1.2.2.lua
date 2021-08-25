@@ -11,5 +11,5 @@ This package can only be loaded on a compute or transfer node. Please use qrsh t
 end
 
 LmodMessage("Loading LIBD module for spaceranger/1.2.2")
-LmodMessage("Reference files, for use with the '--transcriptome' argument, can be accessed or downloaded into /dcl01/ajaffe/data/lab/singleCell/cellranger_reference/.")
+LmodMessage("Reference files, for use with the '--transcriptome' argument, can be accessed or downloaded into /dcs04/lieber/lcolladotor/annotationFiles_LIBD001/10x.")
 prepend_path("PATH", "/jhpce/shared/jhpce/libd/spaceranger/1.2.2/spaceranger-1.2.2")
