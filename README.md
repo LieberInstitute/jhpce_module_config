@@ -118,7 +118,13 @@ chmod 775 -R hisat2
 
 # Contributors
 
+## Current
+
+- [Nick Eagles](https://github.com/Nick-Eagles)
 - [Leonardo Collado Torres](http://lcolladotor.github.io)
+
+## Former
+
 - [Emily E Burke](https://www.libd.org/team/emily-e-burke/)
 - [Andrew E Jaffe](http://aejaffe.com/)
 
