@@ -83,6 +83,8 @@ if [[ $HOSTNAME == compute-* ]]; then
 fi
 ```
 
+Be cautious about `export` statements in your `.bashrc`! In particular, setting variables like `PATH`, `R_HOME`, `LD_LIBRARY_PATH`, and other path-related environment variables can interfere with the functioning of modules or cause other issues that other users won't be able to replicate!
+
 # Create a new module
 
 __Step 1.__ Create a directory in lowercase with the name of the source you are installing. In this example, we are creating a module for [`HISAT2`](https://ccb.jhu.edu/software/hisat2/index.shtml) version [2.0.4](ftp://ftp.ccb.jhu.edu/pub/infphilo/hisat2/downloads/hisat2-2.0.4-Linux_x86_64.zip) that was installed at []().
