@@ -1,6 +1,6 @@
 # JHPCE module config
 
-This repository contains the [Lmod module](https://lmod.readthedocs.io/) configuration files (`.lua`) for modules contributed to [JHPCE](http://www.jhpce.jhu.edu/) by members of the Data Science team lead by [Andrew E. Jaffe](http://aejaffe.com/) at the [Lieber Institute for Brain Development](https://www.libd.org/).
+This repository contains the [Lmod module](https://lmod.readthedocs.io/) configuration files (`.lua`) for modules contributed to [JHPCE](http://www.jhpce.jhu.edu/) by members of the [R/Bioconductor-powered Team Data Science](https://lcolladotor.github.io/bioc_team_ds)  at the [Lieber Institute for Brain Development](https://www.libd.org/).
 
 The source files are hosted in the [jhpce_mod_source](https://github.com/LieberInstitute/jhpce_mod_source) GitHub repository.
 
