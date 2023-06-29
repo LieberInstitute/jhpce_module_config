@@ -41,10 +41,10 @@ Use "module keyword key1 key2 ..." to search for all possible modules matching a
 Then we run the commands listed above and we notice that we have a module for HISAT2 version 2.0.4 listed.
 
 ```bash
-$ module use /jhpce/shared/libd/core
+$ module use /jhpce/shared/libd/modulefiles
 $ module avail
 
---------------------- /jhpce/shared/jhpce/modulefiles/libd ---------------------
+--------------------- /jhpce/shared/libd/modulefiles ---------------------------
    README.md    hisat2/2.0.4
 ```
 
@@ -58,7 +58,7 @@ $ which hisat2
 If we load the module, then we find HISAT2 in the `$PATH` and we can start using it.
 
 ```bash
-$ module use /jhpce/shared/libd/core
+$ module use /jhpce/shared/libd/modulefiles
 $ module load hisat2/2.0.4
 $ which hisat2
 /jhpce/shared/libd/core/hisat2/2.0.4/hisat2-2.0.4/hisat2
@@ -80,7 +80,7 @@ If you want to always include our modules, you can edit your `.bashrc` file and 
 ## List the LIBD modules by default when inside qrsh/qsub
 if [[ $HOSTNAME == compute-* ]] || [[ $HOSTNAME == transfer-* ]]; then
     echo "Adding LIBD modules"
-    module use /jhpce/shared/libd/core
+    module use /jhpce/shared/libd/modulefiles
 fi
 ```
 
