@@ -24,4 +24,4 @@ elseif (mode() == "unload") then
     LmodMessage("Unloading LIBD module for nextflow/18.10.1")
 end
 
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/nextflow/18.10.1")
+prepend_path("PATH", "/jhpce/shared/libd/core/nextflow/18.10.1")

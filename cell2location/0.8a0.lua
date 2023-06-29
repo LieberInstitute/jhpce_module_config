@@ -14,5 +14,5 @@ elseif (mode() == "unload") then
 end
 
 -- Directly activate or deactivate the conda environment
-execute {cmd="conda activate /jhpce/shared/jhpce/libd/cell2location/0.8a0/cell2location_env", modeA={"load"}}
+execute {cmd="conda activate /jhpce/shared/libd/core/cell2location/0.8a0/cell2location_env", modeA={"load"}}
 execute {cmd="conda deactivate", modeA={"unload"}}

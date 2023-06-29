@@ -14,4 +14,4 @@ This package can only be loaded on a compute or transfer node. Please use qrsh t
 end
 
 LmodMessage("Loading LIBD module for PRSice/2.2.13")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/PRSice/2.2.13/PRSice-local/")
+prepend_path("PATH", "/jhpce/shared/libd/core/PRSice/2.2.13/PRSice-local/")

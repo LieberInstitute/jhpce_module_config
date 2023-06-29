@@ -15,5 +15,5 @@ elseif (mode() == "unload") then
 end
 
 -- Directly activate or deactivate the conda environment
-execute {cmd="conda activate /jhpce/shared/jhpce/libd/graphst/da29b75/graphst_env", modeA={"load"}}
+execute {cmd="conda activate /jhpce/shared/libd/core/graphst/da29b75/graphst_env", modeA={"load"}}
 execute {cmd="conda deactivate", modeA={"unload"}}

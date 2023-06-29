@@ -16,5 +16,5 @@ end
 load('python/3.8.3')
 
 -- Directly activate or deactivate the python virtual environment
-execute {cmd="source /jhpce/shared/jhpce/libd/paste/1.3.0/paste_venv/bin/activate", modeA={"load"}}
+execute {cmd="source /jhpce/shared/libd/core/paste/1.3.0/paste_venv/bin/activate", modeA={"load"}}
 execute {cmd="deactivate", modeA={"unload"}}

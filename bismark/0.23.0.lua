@@ -11,4 +11,4 @@ This package can only be loaded on a compute or transfer node. Please use qrsh t
 end
 
 LmodMessage("Loading LIBD module for bismark/0.23.0")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/bismark/0.23.0/Bismark-0.23.0")
+prepend_path("PATH", "/jhpce/shared/libd/core/bismark/0.23.0/Bismark-0.23.0")

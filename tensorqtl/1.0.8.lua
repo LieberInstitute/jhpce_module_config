@@ -16,7 +16,7 @@ end
 load('conda_R/4.3')
 
 -- Directly activate or deactivate the python virtual environment
-execute {cmd="source /jhpce/shared/jhpce/libd/tensorqtl/1.0.8/tensorqtl_venv/bin/activate", modeA={"load"}}
+execute {cmd="source /jhpce/shared/libd/core/tensorqtl/1.0.8/tensorqtl_venv/bin/activate", modeA={"load"}}
 execute {cmd="deactivate", modeA={"unload"}}
 
 -- Seems to be needed for the 'rfunc' module in tensorqtl
@@ -28,5 +28,5 @@ prepend_path("LD_LIBRARY_PATH", "/jhpce/shared/jhpce/core/conda/miniconda3-4.11.
 -- as expected (refer to different "tensorqtl"s). This is necessary because the
 -- pip version of 1.0.8 hasn't been released, but the GitHub repo contains the
 -- up-to-date 1.0.8 python code
-prepend_path("PYTHONPATH", "/jhpce/shared/jhpce/libd/tensorqtl/1.0.8/tensorqtl/tensorqtl")
-prepend_path("PYTHONPATH", "/jhpce/shared/jhpce/libd/tensorqtl/1.0.8/tensorqtl")
+prepend_path("PYTHONPATH", "/jhpce/shared/libd/core/tensorqtl/1.0.8/tensorqtl/tensorqtl")
+prepend_path("PYTHONPATH", "/jhpce/shared/libd/core/tensorqtl/1.0.8/tensorqtl")

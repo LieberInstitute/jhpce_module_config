@@ -11,4 +11,4 @@ This package can only be loaded on a compute or transfer node. Please use qrsh t
 end
 
 LmodMessage("Loading LIBD module for HipSTR/0.7")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/hipstr/0.7/HipSTR")
+prepend_path("PATH", "/jhpce/shared/libd/core/hipstr/0.7/HipSTR")

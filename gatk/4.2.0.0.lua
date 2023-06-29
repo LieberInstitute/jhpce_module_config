@@ -14,4 +14,4 @@ end
 
 LmodMessage("Loading LIBD module for GATK")
 load("python/3.7.3")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/gatk/4.2.0.0")
+prepend_path("PATH", "/jhpce/shared/libd/core/gatk/4.2.0.0")

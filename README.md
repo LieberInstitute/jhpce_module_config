@@ -61,9 +61,9 @@ If we load the module, then we find HISAT2 in the `$PATH` and we can start using
 $ module use /jhpce/shared/libd/core
 $ module load hisat2/2.0.4
 $ which hisat2
-/jhpce/shared/jhpce/libd/hisat2/2.0.4/hisat2-2.0.4/hisat2
+/jhpce/shared/libd/core/hisat2/2.0.4/hisat2-2.0.4/hisat2
 $ hisat2 --version
-/jhpce/shared/jhpce/libd/hisat2/2.0.4/hisat2-2.0.4/hisat2-align-s version 2.0.4
+/jhpce/shared/libd/core/hisat2/2.0.4/hisat2-2.0.4/hisat2-align-s version 2.0.4
 64-bit
 Built on igm3
 Wed May 18 11:37:42 EDT 2016
@@ -123,7 +123,7 @@ chmod 775 -R hisat2
 
 ## Current
 
-- [Nick Eagles](https://github.com/Nick-Eagles)
+- [Nick Eagles](https://nick-eagles.github.io/)
 - [Leonardo Collado Torres](http://lcolladotor.github.io)
 
 ## Former

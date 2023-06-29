@@ -15,4 +15,4 @@ end
 load('python/3.7.3')
 
 LmodMessage("Loading LIBD module for HISAT2/2.2.1")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/hisat2/2.2.1/hisat2-2.2.1")
+prepend_path("PATH", "/jhpce/shared/libd/core/hisat2/2.2.1/hisat2-2.2.1")

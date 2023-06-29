@@ -13,6 +13,6 @@ This package can only be loaded on a compute or transfer node. Please use qrsh t
 end
 
 LmodMessage("Loading LIBD module for BCFTools/1.13")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/bcftools/1.13/bin")
-prepend_path("MANPATH","/jhpce/shared/jhpce/libd/bcftools/1.13/share/man/man1")
-setenv("BCFTOOLS_PLUGINS", "/jhpce/shared/jhpce/libd/bcftools/1.13/bcftools-1.13/plugins")
+prepend_path("PATH", "/jhpce/shared/libd/core/bcftools/1.13/bin")
+prepend_path("MANPATH","/jhpce/shared/libd/core/bcftools/1.13/share/man/man1")
+setenv("BCFTOOLS_PLUGINS", "/jhpce/shared/libd/core/bcftools/1.13/bcftools-1.13/plugins")

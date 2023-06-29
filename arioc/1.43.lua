@@ -13,4 +13,4 @@ end
 LmodMessage("Loading LIBD module for Arioc/1.43")
 
 load("gcc/5.5.0")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/arioc/1.43/bin")
+prepend_path("PATH", "/jhpce/shared/libd/core/arioc/1.43/bin")

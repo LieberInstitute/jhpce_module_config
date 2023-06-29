@@ -13,4 +13,4 @@ This package can only be loaded on a compute or transfer node. Please use qrsh t
 end
 
 LmodMessage("Loading LIBD module for bustools/0.39.3")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/bustools/0.39.3/bustools")
+prepend_path("PATH", "/jhpce/shared/libd/core/bustools/0.39.3/bustools")

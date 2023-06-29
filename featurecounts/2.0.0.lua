@@ -13,4 +13,4 @@ This package can only be loaded on a compute or transfer node. Please use qrsh t
 end
 
 LmodMessage("Loading LIBD module for featureCounts/2.0.0")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/subread/2.0.0/subread-2.0.0-Linux-x86_64/bin")
+prepend_path("PATH", "/jhpce/shared/libd/core/subread/2.0.0/subread-2.0.0-Linux-x86_64/bin")

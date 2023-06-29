@@ -14,4 +14,4 @@ end
 
 LmodMessage("Loading LIBD module for git-status-size/github")
 load('git')
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/git-status-size/github/git-status-size")
+prepend_path("PATH", "/jhpce/shared/libd/core/git-status-size/github/git-status-size")

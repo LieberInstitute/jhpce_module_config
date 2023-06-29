@@ -14,5 +14,5 @@ end
 
 LmodMessage("Loading LIBD module for RSeQC/3.0.1")
 load('python/3.7.3')
-prepend_path("PYTHONPATH", "/jhpce/shared/jhpce/libd/rseqc/3.0.1/RSeQC-3.0.1/bin//jhpce/shared/jhpce/core/python/3.7.3/lib/python3.7/site-packages")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/rseqc/3.0.1/RSeQC-3.0.1/bin//jhpce/shared/jhpce/core/python/3.7.3/bin/")
+prepend_path("PYTHONPATH", "/jhpce/shared/libd/core/rseqc/3.0.1/RSeQC-3.0.1/bin//jhpce/shared/jhpce/core/python/3.7.3/lib/python3.7/site-packages")
+prepend_path("PATH", "/jhpce/shared/libd/core/rseqc/3.0.1/RSeQC-3.0.1/bin//jhpce/shared/jhpce/core/python/3.7.3/bin/")

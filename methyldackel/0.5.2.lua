@@ -12,5 +12,5 @@ end
 
 LmodMessage("Loading LIBD module for methyldackel/0.5.2")
 LmodMessage("Note that the software is invoked as 'MethylDackel', not 'methyldackel'.")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/methyldackel/0.5.2")
-prepend_path("LD_LIBRARY_PATH", "/jhpce/shared/jhpce/libd/methyldackel/0.5.2/lib")
+prepend_path("PATH", "/jhpce/shared/libd/core/methyldackel/0.5.2")
+prepend_path("LD_LIBRARY_PATH", "/jhpce/shared/libd/core/methyldackel/0.5.2/lib")

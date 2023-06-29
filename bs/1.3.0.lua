@@ -13,4 +13,4 @@ This package can only be loaded on a compute or transfer node. Please use qrsh t
 end
 
 LmodMessage("Loading LIBD module for bs/1.3.0")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/bs/1.3.0/bin")
+prepend_path("PATH", "/jhpce/shared/libd/core/bs/1.3.0/bin")

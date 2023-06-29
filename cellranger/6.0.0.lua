@@ -12,4 +12,4 @@ end
 
 LmodMessage("Loading LIBD module for cellranger/6.0.0")
 LmodMessage("Reference files, for use with the '--transcriptome' argument, can be accessed or downloaded into /dcs04/lieber/lcolladotor/annotationFiles_LIBD001/10x.")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/cellranger/6.0.0/cellranger-6.0.0")
+prepend_path("PATH", "/jhpce/shared/libd/core/cellranger/6.0.0/cellranger-6.0.0")

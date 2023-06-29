@@ -17,4 +17,4 @@ elseif (mode() == "unload") then
 end
 
 LmodMessage("Reference files, for use with the '--transcriptome' argument, can be accessed or downloaded into /dcs04/lieber/lcolladotor/annotationFiles_LIBD001/10x.")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/spaceranger/1.3.1/spaceranger-1.3.1")
+prepend_path("PATH", "/jhpce/shared/libd/core/spaceranger/1.3.1/spaceranger-1.3.1")

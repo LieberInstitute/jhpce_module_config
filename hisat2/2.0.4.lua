@@ -13,4 +13,4 @@ This package can only be loaded on a compute or transfer node. Please use qrsh t
 end
 
 LmodMessage("Loading LIBD module for HISAT2/2.0.4")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/hisat2/2.0.4/hisat2-2.0.4")
+prepend_path("PATH", "/jhpce/shared/libd/core/hisat2/2.0.4/hisat2-2.0.4")

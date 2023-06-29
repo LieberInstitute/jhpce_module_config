@@ -10,4 +10,4 @@ end
 LmodMessage("Loading LIBD module for spagcn/1.2.0")
 
 load('python/3.7.3')
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/spagcn/1.2.0/spagcn_venv/bin")
+prepend_path("PATH", "/jhpce/shared/libd/core/spagcn/1.2.0/spagcn_venv/bin")

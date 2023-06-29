@@ -14,4 +14,4 @@ end
 
 LmodMessage("Loading LIBD module for rmate/1.5.9")
 load('ruby/2.6.4p104')
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/rmate/1.5.9/rmate/bin")
+prepend_path("PATH", "/jhpce/shared/libd/core/rmate/1.5.9/rmate/bin")

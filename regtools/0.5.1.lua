@@ -13,4 +13,4 @@ This package can only be loaded on a compute or transfer node. Please use qrsh t
 end
 
 LmodMessage("Loading LIBD module for regtools/0.5.1")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/regtools/0.5.1/regtools-0.5.1/build")
+prepend_path("PATH", "/jhpce/shared/libd/core/regtools/0.5.1/regtools-0.5.1/build")

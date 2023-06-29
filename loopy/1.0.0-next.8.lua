@@ -14,5 +14,5 @@ elseif (mode() == "unload") then
 end
 
 -- Directly activate or deactivate the conda environment
-execute {cmd="conda activate /jhpce/shared/jhpce/libd/loopy/1.0.0-next.8/loopy_env", modeA={"load"}}
+execute {cmd="conda activate /jhpce/shared/libd/core/loopy/1.0.0-next.8/loopy_env", modeA={"load"}}
 execute {cmd="conda deactivate", modeA={"unload"}}

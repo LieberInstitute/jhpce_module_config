@@ -13,4 +13,4 @@ This package can only be loaded on a compute or transfer node. Please use qrsh t
 end
 
 LmodMessage("Loading LIBD module for bamcount/0.2.6")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/bamcount/0.2.6/bamcount-0.2.6/build")
+prepend_path("PATH", "/jhpce/shared/libd/core/bamcount/0.2.6/bamcount-0.2.6/build")

@@ -14,5 +14,5 @@ elseif (mode() == "unload") then
 end
 
 -- Directly activate or deactivate the conda environment
-execute {cmd="conda activate /jhpce/shared/jhpce/libd/synapse/2.6.0/synapse_env", modeA={"load"}}
+execute {cmd="conda activate /jhpce/shared/libd/core/synapse/2.6.0/synapse_env", modeA={"load"}}
 execute {cmd="conda deactivate", modeA={"unload"}}

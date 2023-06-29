@@ -17,4 +17,4 @@ elseif (mode() == "unload") then
     LmodMessage("Unloading LIBD module for cellranger_arc/2.0.2")
 end
 
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/cellranger_arc/2.0.2/cellranger-arc-2.0.2")
+prepend_path("PATH", "/jhpce/shared/libd/core/cellranger_arc/2.0.2/cellranger-arc-2.0.2")

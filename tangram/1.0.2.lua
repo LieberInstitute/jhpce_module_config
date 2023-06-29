@@ -9,4 +9,4 @@ end
 
 LmodMessage("Loading LIBD module for tangram/1.0.2")
 
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/tangram/1.0.2/tangram_env/bin")
+prepend_path("PATH", "/jhpce/shared/libd/core/tangram/1.0.2/tangram_env/bin")

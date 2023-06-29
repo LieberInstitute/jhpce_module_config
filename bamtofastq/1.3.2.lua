@@ -11,4 +11,4 @@ This package can only be loaded on a compute or transfer node. Please use qrsh t
 end
 
 LmodMessage("Loading LIBD module for bamtofastq/1.3.2")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/bamtofastq/1.3.2")
+prepend_path("PATH", "/jhpce/shared/libd/core/bamtofastq/1.3.2")

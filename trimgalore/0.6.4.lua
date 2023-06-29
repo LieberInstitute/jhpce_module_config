@@ -10,6 +10,6 @@ end
 LmodMessage("Loading LIBD module for trimgalore/0.6.4")
 
 load('fastqc/0.11.8')
-prepend_path("PYTHONPATH", "/jhpce/shared/jhpce/libd/trimgalore/0.6.4/cutadapt-2.10/bin/lib/python3.7/site-packages")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/trimgalore/0.6.4/cutadapt-2.10/bin/bin")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/trimgalore/0.6.4/TrimGalore")
+prepend_path("PYTHONPATH", "/jhpce/shared/libd/core/trimgalore/0.6.4/cutadapt-2.10/bin/lib/python3.7/site-packages")
+prepend_path("PATH", "/jhpce/shared/libd/core/trimgalore/0.6.4/cutadapt-2.10/bin/bin")
+prepend_path("PATH", "/jhpce/shared/libd/core/trimgalore/0.6.4/TrimGalore")

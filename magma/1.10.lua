@@ -16,4 +16,4 @@ elseif (mode() == "unload") then
     LmodMessage("Unloading LIBD module for magma/1.10")
 end
 
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/magma/1.10")
+prepend_path("PATH", "/jhpce/shared/libd/core/magma/1.10")

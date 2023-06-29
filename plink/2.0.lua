@@ -14,4 +14,4 @@ end
 
 LmodMessage("Loading LIBD module for plink/2.0")
 LmodMessage("Plink is invoked with the command 'plink2'.")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/plink/2.0")
+prepend_path("PATH", "/jhpce/shared/libd/core/plink/2.0")

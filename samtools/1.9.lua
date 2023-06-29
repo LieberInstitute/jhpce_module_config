@@ -15,5 +15,5 @@ end
 LmodMessage("Loading LIBD module for samtools/1.9")
 -- could be necessary (it's used on the core modules for samtools 1.0 and 1.1 but not on 1.6)
 -- prereq("gcc/4.4.7")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/samtools/1.9/bin")
-prepend_path("MANPATH", "/jhpce/shared/jhpce/libd/samtools/1.9/share/man/man1")
+prepend_path("PATH", "/jhpce/shared/libd/core/samtools/1.9/bin")
+prepend_path("MANPATH", "/jhpce/shared/libd/core/samtools/1.9/share/man/man1")

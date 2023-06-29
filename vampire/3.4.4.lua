@@ -10,5 +10,5 @@ end
 LmodMessage("Loading LIBD module for vampire/3.4.4")
 
 load('python/3.6.9')
-prepend_path("PYTHONPATH", "/jhpce/shared/jhpce/libd/vampire/3.4.4/vampire/bin/lib/python3.6/site-packages")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/vampire/3.4.4/vampire/bin/bin")
+prepend_path("PYTHONPATH", "/jhpce/shared/libd/core/vampire/3.4.4/vampire/bin/lib/python3.6/site-packages")
+prepend_path("PATH", "/jhpce/shared/libd/core/vampire/3.4.4/vampire/bin/bin")

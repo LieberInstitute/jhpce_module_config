@@ -14,11 +14,11 @@ elseif (mode() == "unload") then
 end
 
 -- Directly activate or deactivate the conda environment
-execute {cmd="conda activate /jhpce/shared/jhpce/libd/cellpose/2.0/cellpose_env", modeA={"load"}}
+execute {cmd="conda activate /jhpce/shared/libd/core/cellpose/2.0/cellpose_env", modeA={"load"}}
 execute {cmd="conda deactivate", modeA={"unload"}}
 
 -- Manually add some directories to the library path
 prepend_path(
     "LD_LIBRARY_PATH",
-    "/jhpce/shared/jhpce/libd/cellpose/2.0/cellpose_env/lib:/jhpce/shared/jhpce/libd/cellpose/2.0/cellpose_env/x86_64-conda-linux-gnu/sysroot/usr/lib64"
+    "/jhpce/shared/libd/core/cellpose/2.0/cellpose_env/lib:/jhpce/shared/libd/core/cellpose/2.0/cellpose_env/x86_64-conda-linux-gnu/sysroot/usr/lib64"
 )

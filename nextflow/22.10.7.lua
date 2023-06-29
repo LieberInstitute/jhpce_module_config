@@ -27,4 +27,4 @@ elseif (mode() == "unload") then
     unload('java/14.0.2')
 end
 
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/nextflow/22.10.7")
+prepend_path("PATH", "/jhpce/shared/libd/core/nextflow/22.10.7")

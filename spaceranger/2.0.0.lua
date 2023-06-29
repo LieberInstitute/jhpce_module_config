@@ -17,4 +17,4 @@ elseif (mode() == "unload") then
     LmodMessage("Unloading LIBD module for spaceranger/2.0.0")
 end
 
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/spaceranger/2.0.0/spaceranger-2.0.0")
+prepend_path("PATH", "/jhpce/shared/libd/core/spaceranger/2.0.0/spaceranger-2.0.0")

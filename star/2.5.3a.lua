@@ -13,4 +13,4 @@ This package can only be loaded on a compute or transfer node. Please use qrsh t
 end
 
 LmodMessage("Loading LIBD module for star/2.5.3a")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/star/2.5.3a/STAR-2.5.3a/bin/Linux_x86_64_static")
+prepend_path("PATH", "/jhpce/shared/libd/core/star/2.5.3a/STAR-2.5.3a/bin/Linux_x86_64_static")

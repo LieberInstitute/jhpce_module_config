@@ -11,4 +11,4 @@ This package can only be loaded on a compute or transfer node. Please use qrsh t
 end
 
 LmodMessage("Loading LIBD module for samblaster/0.1.26")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/samblaster/0.1.26/samblaster-v.0.1.26")
+prepend_path("PATH", "/jhpce/shared/libd/core/samblaster/0.1.26/samblaster-v.0.1.26")

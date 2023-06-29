@@ -14,4 +14,4 @@ This package can only be loaded on a compute or transfer node. Please use qrsh t
 end
 
 LmodMessage("Loading LIBD module for qctool/2.0.7")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/qctool/2.0.7/qctool/build/release/")
+prepend_path("PATH", "/jhpce/shared/libd/core/qctool/2.0.7/qctool/build/release/")

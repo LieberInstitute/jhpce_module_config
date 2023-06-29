@@ -17,4 +17,4 @@ elseif (mode() == "unload") then
 end
 
 load("gcc/5.5.0")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/arioc/1.51/bin")
+prepend_path("PATH", "/jhpce/shared/libd/core/arioc/1.51/bin")

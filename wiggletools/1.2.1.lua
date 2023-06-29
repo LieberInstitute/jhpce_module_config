@@ -13,5 +13,5 @@ This package can only be loaded on a compute or transfer node. Please use qrsh t
 end
 
 LmodMessage("Loading LIBD module for WiggleTools/1.2.1")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/wiggletools/1.2.1/wiggle/bin")
-prepend_path("LD_LIBRARY_PATH", "/jhpce/shared/jhpce/libd/wiggletools/1.2.1/wiggle/lib")
+prepend_path("PATH", "/jhpce/shared/libd/core/wiggletools/1.2.1/wiggle/bin")
+prepend_path("LD_LIBRARY_PATH", "/jhpce/shared/libd/core/wiggletools/1.2.1/wiggle/lib")

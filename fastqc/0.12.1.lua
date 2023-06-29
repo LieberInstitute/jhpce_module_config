@@ -17,4 +17,4 @@ if (mode() == "load") then
 elseif (mode() == "unload") then
     LmodMessage("Unloading LIBD module for FastQC/0.12.1")
 end
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/FastQC/0.12.1/FastQC")
+prepend_path("PATH", "/jhpce/shared/libd/core/FastQC/0.12.1/FastQC")

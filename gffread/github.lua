@@ -13,4 +13,4 @@ This package can only be loaded on a compute or transfer node. Please use qrsh t
 end
 
 LmodMessage("Loading LIBD module for gffread/github [a3fd02f]")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/gffread/github/gffread")
+prepend_path("PATH", "/jhpce/shared/libd/core/gffread/github/gffread")

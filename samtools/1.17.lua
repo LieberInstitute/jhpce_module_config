@@ -18,5 +18,5 @@ elseif (mode() == "unload") then
     LmodMessage("Unloading LIBD module for samtools/1.17")
 end
 
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/samtools/1.17/bin")
-prepend_path("MANPATH", "/jhpce/shared/jhpce/libd/samtools/1.17/share/man/man1")
+prepend_path("PATH", "/jhpce/shared/libd/core/samtools/1.17/bin")
+prepend_path("MANPATH", "/jhpce/shared/libd/core/samtools/1.17/share/man/man1")

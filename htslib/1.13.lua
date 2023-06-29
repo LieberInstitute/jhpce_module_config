@@ -13,9 +13,9 @@ This package can only be loaded on a compute or transfer node. Please use qrsh t
 end
 
 LmodMessage("Loading LIBD module for htslib/1.13")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/htslib/1.13/bin")
-prepend_path("MANPATH","/jhpce/shared/jhpce/libd/htslib/1.13/share/man/man1")
-prepend_path("LD_LIBRARY_PATH", "/jhpce/shared/jhpce/libd/htslib/1.13/lib")
-prepend_path("C_INCLUDE_PATH", "/jhpce/shared/jhpce/libd/htslib/1.13/include")
-prepend_path("LIBRARY_PATH", "/jhpce/shared/jhpce/libd/htslib/1.13/lib")
-prepend_path("PKG_CONFIG_PATH", "/jhpce/shared/jhpce/libd/htslib/1.13/lib/pkgconfig")
+prepend_path("PATH", "/jhpce/shared/libd/core/htslib/1.13/bin")
+prepend_path("MANPATH","/jhpce/shared/libd/core/htslib/1.13/share/man/man1")
+prepend_path("LD_LIBRARY_PATH", "/jhpce/shared/libd/core/htslib/1.13/lib")
+prepend_path("C_INCLUDE_PATH", "/jhpce/shared/libd/core/htslib/1.13/include")
+prepend_path("LIBRARY_PATH", "/jhpce/shared/libd/core/htslib/1.13/lib")
+prepend_path("PKG_CONFIG_PATH", "/jhpce/shared/libd/core/htslib/1.13/lib/pkgconfig")

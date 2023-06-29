@@ -12,5 +12,5 @@ end
 
 LmodMessage("Loading LIBD module for LDSC/1.0.1")
 load('python/3.7.3')
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/ldsc/1.0.1/ldsc")
+prepend_path("PATH", "/jhpce/shared/libd/core/ldsc/1.0.1/ldsc")
 setenv('OPENBLAS_NUM_THREADS', 1)

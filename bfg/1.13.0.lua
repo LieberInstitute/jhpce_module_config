@@ -13,5 +13,5 @@ This package can only be loaded on a compute or transfer node. Please use qrsh t
 end
 
 LmodMessage("Loading LIBD module for bfg/1.13.0")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/bfg/1.13.0")
-LmodMessage("Use with `java -jar /jhpce/shared/jhpce/libd/bfg/1.13.0/bfg.jar`")
+prepend_path("PATH", "/jhpce/shared/libd/core/bfg/1.13.0")
+LmodMessage("Use with `java -jar /jhpce/shared/libd/core/bfg/1.13.0/bfg.jar`")

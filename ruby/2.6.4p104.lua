@@ -13,6 +13,6 @@ This package can only be loaded on a compute or transfer node. Please use qrsh t
 end
 
 LmodMessage("Loading LIBD module for ruby/2.6.4p104")
-prepend_path("PATH", "/jhpce/shared/jhpce/libd/ruby/2.6.4p104/rubyinstall/bin")
-prepend_path("MANPATH","/jhpce/shared/jhpce/libd/ruby/2.6.4p104/rubyinstall/share/man/man1")
+prepend_path("PATH", "/jhpce/shared/libd/core/ruby/2.6.4p104/rubyinstall/bin")
+prepend_path("MANPATH","/jhpce/shared/libd/core/ruby/2.6.4p104/rubyinstall/share/man/man1")
 
