@@ -45,7 +45,7 @@ $ module use /jhpce/shared/libd/modulefiles
 $ module avail
 
 --------------------- /jhpce/shared/libd/modulefiles ---------------------------
-   README.md    hisat2/2.0.4
+   hisat2/2.0.4
 ```
 
 Without loading the module, we don't see HISAT2 on the `$PATH` environment variable.
@@ -103,10 +103,10 @@ touch hisat2/2.0.4.lua
 To jump start this process, you can simply copy one of the existing `.lua` files. For example, here we'll copy the `.lua` file for the `git/2.17.0` module.
 
 ```bash
-cp /jhpce/shared/jhpce/modulefiles/core/git/2.17.0.lua hisat2/2.0.4.lua
+cp /jhpce/shared/libd/modulefiles/git/2.17.0.lua hisat2/2.0.4.lua
 
 ## Or use the HISAT2 v2.0.4 module file for future use
-cp /jhpce/shared/jhpce/modulefiles/libd/hisat2/2.0.4.lua your_software/your_version.lua
+cp /jhpce/shared/libd/modulefiles/hisat2/2.0.4.lua your_software/your_version.lua
 ```
 
 __Step 3.__ Edit the `.lua` file you just created and test it. As an example, check the [hisat2/2.0.4.lua](hisat2/2.0.4.lua) file.
@@ -114,7 +114,7 @@ __Step 3.__ Edit the `.lua` file you just created and test it. As an example, ch
 __Step 4.__ Make sure that the permissions are set correctly at the end.
 
 ```bash
-## Use 7 for group: so Emily and Leo can edit the files
+## Use 7 for group: so Nick and Leo can edit the files
 chmod 775 -R hisat2
 ```
 
