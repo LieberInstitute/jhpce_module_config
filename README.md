@@ -45,7 +45,7 @@ $ module use /jhpce/shared/libd/modulefiles
 $ module avail
 
 --------------------- /jhpce/shared/libd/modulefiles ---------------------------
-   hisat2/2.0.4
+   hisat2/2.2.1
 ```
 
 Without loading the module, we don't see HISAT2 on the `$PATH` environment variable.
@@ -59,16 +59,16 @@ If we load the module, then we find HISAT2 in the `$PATH` and we can start using
 
 ```bash
 $ module use /jhpce/shared/libd/modulefiles
-$ module load hisat2/2.0.4
+$ module load hisat2/2.2.1
 $ which hisat2
-/jhpce/shared/libd/core/hisat2/2.0.4/hisat2-2.0.4/hisat2
+/jhpce/shared/libd/core/hisat2/2.2.1/hisat2-2.2.1/hisat2
 $ hisat2 --version
-/jhpce/shared/libd/core/hisat2/2.0.4/hisat2-2.0.4/hisat2-align-s version 2.0.4
+/jhpce/shared/libd/core/hisat2/2.2.1/hisat2-2.2.1/hisat2-align-s version 2.2.1
 64-bit
-Built on igm3
-Wed May 18 11:37:42 EDT 2016
-Compiler: gcc version 4.5.4 (GCC)
-Options: -O3 -m64 -msse2 -funroll-loops -g3 -DPOPCNT_CAPABILITY
+Built on compute-094.cm.cluster
+Thu Jun 29 02:28:02 PM EDT 2023
+Compiler: gcc version 11.3.1 20221121 (Red Hat 11.3.1-4) (GCC) 
+Options: -O3 -m64 -msse2 -funroll-loops -g3 -DPOPCNT_CAPABILITY -std=c++11
 Sizeof {int, long, long long, void*, size_t, off_t}: {4, 8, 8, 8, 8, 8}
 ```
 
@@ -88,28 +88,26 @@ Be cautious about `export` statements in your `.bashrc`! In particular, setting 
 
 # Create a new module
 
-__Step 1.__ Create a directory in lowercase with the name of the source you are installing. In this example, we are creating a module for [`HISAT2`](https://ccb.jhu.edu/software/hisat2/index.shtml) version [2.0.4](ftp://ftp.ccb.jhu.edu/pub/infphilo/hisat2/downloads/hisat2-2.0.4-Linux_x86_64.zip) that was installed at []().
+__Step 1.__ Create a directory in lowercase with the name of the source you are installing. In this example, we are creating a module for [`HISAT2`](https://daehwankimlab.github.io/hisat2/) version [2.2.1](https://github.com/DaehwanKimLab/hisat2/archive/refs/tags/v2.2.1.tar.gz) that was installed at [jhpce_module_source/tree/SLURM/hisat2/2.2.1](https://github.com/LieberInstitute/jhpce_module_source/tree/SLURM/hisat2/2.2.1).
 
 ```bash
 mkdir hisat2
 ```
 
-__Step 2.__ Create a [`.lua`](https://lmod.readthedocs.io/en/latest/050_lua_modulefiles.html) configuration file with the version number of the software you are installing. In this example, that would be `2.0.4.lua`.
+__Step 2.__ Create a [`.lua`](https://lmod.readthedocs.io/en/latest/050_lua_modulefiles.html) configuration file with the version number of the software you are installing. In this example, that would be `2.2.1.lua`.
 
 ```bash
-touch hisat2/2.0.4.lua
+touch hisat2/2.2.1.lua
 ```
 
-To jump start this process, you can simply copy one of the existing `.lua` files. For example, here we'll copy the `.lua` file for the `git/2.17.0` module.
+To jump start this process, you can simply copy one of the existing `.lua` files. For example, you could copy the `.lua` file for the ` hisat2/2.2.1` module.
 
 ```bash
-cp /jhpce/shared/libd/modulefiles/git/2.17.0.lua hisat2/2.0.4.lua
-
-## Or use the HISAT2 v2.0.4 module file for future use
-cp /jhpce/shared/libd/modulefiles/hisat2/2.0.4.lua your_software/your_version.lua
+## You could use the HISAT2 v2.0.4 module file for future use
+cp /jhpce/shared/libd/modulefiles/hisat2/2.2.1.lua your_software/your_version.lua
 ```
 
-__Step 3.__ Edit the `.lua` file you just created and test it. As an example, check the [hisat2/2.0.4.lua](hisat2/2.0.4.lua) file.
+__Step 3.__ Edit the `.lua` file you just created and test it. As an example, check the [hisat2/2.2.1.lua](hisat2/2.2.1.lua) file.
 
 __Step 4.__ Make sure that the permissions are set correctly at the end.
 
