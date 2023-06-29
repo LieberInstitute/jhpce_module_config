@@ -1,6 +1,6 @@
 # JHPCE module config
 
-This repository contains the [Lmod module](https://lmod.readthedocs.io/) configuration files (`.lua`) for modules contributed to [JHPCE](http://www.jhpce.jhu.edu/) by members of the [R/Bioconductor-powered Team Data Science](https://lcolladotor.github.io/bioc_team_ds)  at the [Lieber Institute for Brain Development](https://www.libd.org/).
+This repository contains the [Lmod module](https://lmod.readthedocs.io/) configuration files (`.lua`) for modules contributed to [JHPCE](http://www.jhpce.jhu.edu/) by members of the [R/Bioconductor-powered Team Data Science](https://lcolladotor.github.io)  at the [Lieber Institute for Brain Development](https://www.libd.org/).
 
 The source files are hosted in the [jhpce_module_source](https://github.com/LieberInstitute/jhpce_module_source) GitHub repository.
 
@@ -13,7 +13,7 @@ If you have any questions, please send an email to the [JHPCE bithelp](mailto:bi
 To use these modules, you have to tell [Lmod module](https://lmod.readthedocs.io/) where this files are listed with the `module use` command. Then you can run the `module avail` command to see all the list of modules.
 
 ```bash
-module use /jhpce/shared/jhpce/modulefiles/libd
+module use /jhpce/shared/libd/core
 module avail
 ```
 
@@ -23,24 +23,25 @@ As an example, if we run `module avail` first we don't see the LIBD modules list
 
 ```bash
 $ module avail
------------- /jhpce/shared/community/modulefiles/compiler/gcc/4.4.7 ------------
+--------------------------------- /jhpce/shared/jhpce/modulefiles --------------
 (output deleted)
-------------------- /jhpce/shared/community/modulefiles/core -------------------
-(output deleted)
---------------------- /jhpce/shared/jhpce/modulefiles/core ---------------------
-(output deleted)
-  Where:
-   (D):  Default Module
 
-Use "module spider" to find all possible modules.
-Use "module keyword key1 key2 ..." to search for all possible modules matching
-any of the "keys".
+  Where:
+   L:  Module is loaded
+
+If the avail list is too long consider trying:
+
+"module --default avail" or "ml -d av" to just list the default modules.
+"module overview" or "ml ov" to display the number of modules for each name.
+
+Use "module spider" to find all possible modules and extensions.
+Use "module keyword key1 key2 ..." to search for all possible modules matching any of the "keys".
 ```
 
 Then we run the commands listed above and we notice that we have a module for HISAT2 version 2.0.4 listed.
 
 ```bash
-$ module use /jhpce/shared/jhpce/modulefiles/libd
+$ module use /jhpce/shared/libd/core
 $ module avail
 
 --------------------- /jhpce/shared/jhpce/modulefiles/libd ---------------------
@@ -57,7 +58,7 @@ $ which hisat2
 If we load the module, then we find HISAT2 in the `$PATH` and we can start using it.
 
 ```bash
-$ module use /jhpce/shared/jhpce/modulefiles/libd
+$ module use /jhpce/shared/libd/core
 $ module load hisat2/2.0.4
 $ which hisat2
 /jhpce/shared/jhpce/libd/hisat2/2.0.4/hisat2-2.0.4/hisat2
@@ -77,9 +78,9 @@ If you want to always include our modules, you can edit your `.bashrc` file and 
 
 ```bash
 ## List the LIBD modules by default when inside qrsh/qsub
-if [[ $HOSTNAME == compute-* ]]; then
+if [[ $HOSTNAME == compute-* ]] || [[ $HOSTNAME == transfer-* ]]; then
     echo "Adding LIBD modules"
-    module use /jhpce/shared/jhpce/modulefiles/libd
+    module use /jhpce/shared/libd/core
 fi
 ```
 
@@ -132,13 +133,13 @@ chmod 775 -R hisat2
 
 # JHPCE location
 
-`/jhpce/shared/jhpce/modulefiles/libd`
+`/jhpce/shared/libd/modulefiles`
 
 Useful aliases for your `~/.bashrc` file:
 
 ```bash
 ## Creating modules
 # https://lmod.readthedocs.io/en/latest/050_lua_modulefiles.html
-alias modsrc="cd /jhpce/shared/jhpce/libd"
-alias modlua="cd /jhpce/shared/jhpce/modulefiles/libd"
+alias modsrc="cd /jhpce/shared/libd/core"
+alias modlua="cd /jhpce/shared/libd/modulefiles"
 ```
