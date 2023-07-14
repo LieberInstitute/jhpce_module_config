@@ -2,7 +2,7 @@
 -- vim:ft=lua:et:ts=4
 
 help([[
-This module loads FastQC version 0.12.1.
+This module loads FastQC version 0.11.8.
 ]])
 
 whatis("FastQC")
@@ -13,8 +13,8 @@ This package can only be loaded on a compute or transfer node. Please use qrsh t
 end
 
 if (mode() == "load") then
-    LmodMessage("Loading LIBD module for FastQC/0.12.1")
+    LmodMessage("Loading LIBD module for FastQC/0.11.8")
 elseif (mode() == "unload") then
-    LmodMessage("Unloading LIBD module for FastQC/0.12.1")
+    LmodMessage("Unloading LIBD module for FastQC/0.11.8")
 end
-prepend_path("PATH", "/jhpce/shared/libd/core/FastQC/0.12.1/FastQC")
+prepend_path("PATH", "/jhpce/shared/libd/core/FastQC/0.11.8/FastQC")
