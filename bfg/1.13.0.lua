@@ -7,7 +7,7 @@ This module loads bfg version 1.13.0.
 
 whatis("bfg")
 
-if not string.match(os.getenv("HOSTNAME"),"compute") and not  string.match(os.getenv("HOSTNAME"),"transfer") then  
+if not string.match(os.getenv("SLURMD_NODENAME"),"compute") and not  string.match(os.getenv("SLURMD_NODENAME"),"transfer") then  
     LmodError("\
 This package can only be loaded on a compute or transfer node. Please use qrsh to connect to a valid compute or transfer node.")
 end
