@@ -13,7 +13,10 @@ elseif (mode() == "unload") then
     LmodMessage("Unloading LIBD module for samui/1.0.0-next.45")
 end
 
--- Directly activate or deactivate the conda environment
+-- Directly activate or deactivate the conda environment. Here we directly
+-- source conda-related code to circumvent the need for 'conda init', which is
+-- user dependent
+execute {cmd="source /jhpce/shared/jhpce/core/conda/miniconda3-23.3.1/etc/profile.d/conda.sh", modeA={"load"}}
 execute {cmd="conda activate /jhpce/shared/libd/core/samui/1.0.0-next.45/samui_env", modeA={"load"}}
 execute {cmd="conda deactivate", modeA={"unload"}}
 
