@@ -2,8 +2,10 @@
 -- vim:ft=lua:et:ts=4
 
 help([[
-This module loads samblaster v0.1.26.
+This module loads samtools version 1.18.
 ]])
+
+whatis("samtools")
 
 -- Check if the env var SLURMD_NODENAME exists to indirectly verify if a user
 -- is on a compute or transfer node
@@ -13,9 +15,10 @@ if (node_name == "undefined") then
 end
 
 if (mode() == "load") then
-    LmodMessage("Loading LIBD module for samblaster/0.1.26")
+    LmodMessage("Loading LIBD module for samtools/1.18")
 elseif (mode() == "unload") then
-    LmodMessage("Unloading LIBD module for samblaster/0.1.26")
+    LmodMessage("Unloading LIBD module for samtools/1.18")
 end
 
-prepend_path("PATH", "/jhpce/shared/libd/core/samblaster/0.1.26/samblaster-v.0.1.26")
+prepend_path("PATH", "/jhpce/shared/libd/core/samtools/1.18/bin")
+prepend_path("MANPATH", "/jhpce/shared/libd/core/samtools/1.18/share/man/man1")
