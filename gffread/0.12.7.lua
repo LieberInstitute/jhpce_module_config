@@ -1,7 +1,7 @@
 -- -*- lua -*-
 -- vim:ft=lua:et:ts=4
 
-help([[This module loads MethylDackel 0.5.2.]])
+help([[This module loads gffread 0.12.7.]])
 
 -- Check if the env var SLURMD_NODENAME exists to indirectly verify if a user
 -- is on a compute or transfer node
@@ -11,11 +11,9 @@ if (node_name == "undefined") then
 end
 
 if (mode() == "load") then
-    LmodMessage("Loading LIBD module for methyldackel/0.5.2")
-    LmodMessage("Note that the software is invoked as 'MethylDackel', not 'methyldackel'.")
+    LmodMessage("Loading LIBD module for gffread/0.12.7")
 elseif (mode() == "unload") then
-    LmodMessage("Unloading LIBD module for methyldackel/0.5.2")
+    LmodMessage("Unloading LIBD module for gffread/0.12.7")
 end
 
-prepend_path("PATH", "/jhpce/shared/libd/core/methyldackel/0.5.2")
-prepend_path("LD_LIBRARY_PATH", "/jhpce/shared/libd/core/methyldackel/0.5.2/lib")
+prepend_path("PATH", "/jhpce/shared/libd/core/gffread/0.12.7/gffread-0.12.7.Linux_x86_64")
