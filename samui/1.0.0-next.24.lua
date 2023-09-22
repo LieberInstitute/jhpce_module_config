@@ -24,3 +24,6 @@ execute {cmd="conda deactivate", modeA={"unload"}}
 
 -- Seems to be necessary for finding python scripts from the Samui repo
 append_path('PYTHONPATH', '/jhpce/shared/libd/core/samui/1.0.0-next.24/samui')
+
+-- Don't try to depend on user-installed python packages
+setenv("PYTHONNOUSERSITE", "anything")

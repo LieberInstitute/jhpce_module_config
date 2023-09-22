@@ -32,3 +32,6 @@ prepend_path("LD_LIBRARY_PATH", "/jhpce/shared/jhpce/core/conda/miniconda3-4.11.
 -- up-to-date 1.0.8 python code
 prepend_path("PYTHONPATH", "/jhpce/shared/libd/core/tensorqtl/1.0.8/tensorqtl/tensorqtl")
 prepend_path("PYTHONPATH", "/jhpce/shared/libd/core/tensorqtl/1.0.8/tensorqtl")
+
+-- Don't try to depend on user-installed python packages
+setenv("PYTHONNOUSERSITE", "anything")

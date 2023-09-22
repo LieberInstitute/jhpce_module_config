@@ -29,3 +29,6 @@ execute {cmd="conda deactivate", modeA={"unload"}}
 
 -- This gives access to the physical python scripts
 prepend_path("PATH", "/jhpce/shared/libd/core/rseqc/3.0.1/RSeQC-3.0.1/scripts")
+
+-- Don't try to depend on user-installed python packages
+setenv("PYTHONNOUSERSITE", "anything")

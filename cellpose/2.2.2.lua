@@ -24,3 +24,6 @@ execute {cmd="conda deactivate", modeA={"unload"}}
 prepend_path(
     "LD_LIBRARY_PATH", "/jhpce/shared/libd/core/cellpose/2.2.2/cellpose_env/lib"
 )
+
+-- Don't try to depend on user-installed python packages
+setenv("PYTHONNOUSERSITE", "anything")

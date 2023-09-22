@@ -22,3 +22,6 @@ end
 execute {cmd="source /jhpce/shared/jhpce/core/conda/miniconda3-23.3.1/etc/profile.d/conda.sh", modeA={"load"}}
 execute {cmd="conda activate /jhpce/shared/libd/core/graphst/da29b75/graphst_env", modeA={"load"}}
 execute {cmd="conda deactivate", modeA={"unload"}}
+
+-- Don't try to depend on user-installed python packages
+setenv("PYTHONNOUSERSITE", "anything")
