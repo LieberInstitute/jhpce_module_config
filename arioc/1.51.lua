@@ -1,9 +1,7 @@
 -- -*- lua -*-
 -- vim:ft=lua:et:ts=4
 
-help([[
-This module loads Arioc version 1.51.
-]])
+help([[This module loads Arioc version 1.51.]])
 
 -- Check if the env var SLURMD_NODENAME exists to indirectly verify if a user
 -- is on a compute or transfer node
@@ -18,5 +16,4 @@ elseif (mode() == "unload") then
     LmodMessage("Unloading LIBD module for Arioc/1.51")
 end
 
-load("gcc/5.5.0")
 prepend_path("PATH", "/jhpce/shared/libd/core/arioc/1.51/bin")
