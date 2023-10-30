@@ -2,7 +2,7 @@
 -- vim:ft=lua:et:ts=4
 
 help([[
-This module loads nextflow version 22.10.7 (build 5853).
+This module loads nextflow version 22.10.7.
 ]])
 
 whatis("Nextflow")
@@ -21,12 +21,12 @@ if (mode() == "load") then
     -- The 'conda_R' module seems to interfere with first-time execution of
     -- nextflow when '_JAVA_OPTIONS' is set. To avoid this confusing scenario,
     -- make sure 'conda_R' is not loaded while using nextflow
-    unload('conda_R')
-
-    load('java/14.0.2')
+    -- (this should be conditional, not all people have this loaded by default)
+    -- unload('conda_R')
+    load('java/18')
 elseif (mode() == "unload") then
     LmodMessage("Unloading LIBD module for nextflow/22.10.7")
-    unload('java/14.0.2')
+    unload('java/18')
 end
 
 prepend_path("PATH", "/jhpce/shared/libd/core/nextflow/22.10.7")
