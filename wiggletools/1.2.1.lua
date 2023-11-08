@@ -20,9 +20,7 @@ elseif (mode() == "unload") then
     LmodMessage("Unloading LIBD module for WiggleTools/1.2.1")
 end
 
--- Directly activate or deactivate the conda environment. Here we directly
--- source conda-related code to circumvent the need for 'conda init', which is
--- user dependent
-execute {cmd="source /jhpce/shared/jhpce/core/conda/miniconda3-23.3.1/etc/profile.d/conda.sh", modeA={"load"}}
+-- Directly activate or deactivate the conda environment
+always_load("conda/3-23.3.1")
 execute {cmd="conda activate /jhpce/shared/libd/core/wiggletools/1.2.1/wiggle_env", modeA={"load"}}
 execute {cmd="conda deactivate", modeA={"unload"}}
