@@ -14,5 +14,5 @@ if (node_name == "undefined") then
     LmodError("This package can only be loaded on a compute or transfer node. Please use a SLURM command (srun, sbatch, salloc) to a compute or transfer node.")
 end
 
-LmodMessage("Loading LIBD module for regtools/0.5.33g")
+LmodMessage("Loading LIBD SLURM module for regtools/0.5.33g")
 prepend_path("PATH", "/jhpce/shared/libd/core/regtools/0.5.33g/regtools-0.5.33g/build")

@@ -11,9 +11,9 @@ if (node_name == "undefined") then
 end
 
 if (mode() == "load") then
-    LmodMessage("Loading LIBD module for Arioc/1.51")
+    LmodMessage("Loading LIBD SLURM module for Arioc/1.51")
 elseif (mode() == "unload") then
-    LmodMessage("Unloading LIBD module for Arioc/1.51")
+    LmodMessage("Unloading LIBD SLURM module for Arioc/1.51")
 end
 
 prepend_path("PATH", "/jhpce/shared/libd/core/arioc/1.51/bin")

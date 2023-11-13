@@ -14,6 +14,6 @@ if (node_name == "undefined") then
     LmodError("This package can only be loaded on a compute or transfer node. Please use a SLURM command (srun, sbatch, salloc) to a compute or transfer node.")
 end
 
-LmodMessage("Loading LIBD module for GATK")
+LmodMessage("Loading LIBD SLURM module for GATK")
 load("python/3.7.3")
 prepend_path("PATH", "/jhpce/shared/libd/core/gatk/4.2.0.0")

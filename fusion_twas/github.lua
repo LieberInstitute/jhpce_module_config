@@ -14,7 +14,7 @@ if (node_name == "undefined") then
     LmodError("This package can only be loaded on a compute or transfer node. Please use a SLURM command (srun, sbatch, salloc) to a compute or transfer node.")
 end
 
-LmodMessage("Loading LIBD module for fusion_twas/github")
+LmodMessage("Loading LIBD SLURM module for fusion_twas/github")
 load('plink/1.90b6.6')
 prepend_path("PATH", "/jhpce/shared/libd/core/fusion_twas/github/fusion_twas")
 

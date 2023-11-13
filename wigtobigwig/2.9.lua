@@ -15,8 +15,8 @@ if (node_name == "undefined") then
 end
 
 if (mode() == "load") then
-    LmodMessage("Loading LIBD module for wigToBigWig/2.9")
+    LmodMessage("Loading LIBD SLURM module for wigToBigWig/2.9")
 elseif (mode() == "unload") then
-    LmodMessage("Unloading LIBD module for wigToBigWig/2.9")
+    LmodMessage("Unloading LIBD SLURM module for wigToBigWig/2.9")
 end
 prepend_path("PATH", "/jhpce/shared/libd/core/wigtobigwig/2.9")

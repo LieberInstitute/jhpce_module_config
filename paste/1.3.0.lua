@@ -10,9 +10,9 @@ if (node_name == "undefined") then
 end
 
 if (mode() == "load") then
-    LmodMessage("Loading LIBD module for paste/1.3.0")
+    LmodMessage("Loading LIBD SLURM module for paste/1.3.0")
 elseif (mode() == "unload") then
-    LmodMessage("Unloading LIBD module for paste/1.3.0")
+    LmodMessage("Unloading LIBD SLURM module for paste/1.3.0")
 end
 
 load('python/3.8.3')

@@ -15,9 +15,9 @@ if (node_name == "undefined") then
 end
 
 if (mode() == "load") then
-    LmodMessage("Loading LIBD module for RSeQC/3.0.1")
+    LmodMessage("Loading LIBD SLURM module for RSeQC/3.0.1")
 elseif (mode() == "unload") then
-    LmodMessage("Unloading LIBD module for RSeQC/3.0.1")
+    LmodMessage("Unloading LIBD SLURM module for RSeQC/3.0.1")
 end
 
 -- Directly activate or deactivate the conda environment

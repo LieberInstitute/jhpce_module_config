@@ -15,9 +15,9 @@ if (node_name == "undefined") then
 end
 
 if (mode() == "load") then
-    LmodMessage("Loading LIBD module for star/2.7.8a")
+    LmodMessage("Loading LIBD SLURM module for star/2.7.8a")
 elseif (mode() == "unload") then
-    LmodMessage("Unloading LIBD module for star/2.7.8a")
+    LmodMessage("Unloading LIBD SLURM module for star/2.7.8a")
 end
 
 prepend_path("PATH", "/jhpce/shared/libd/core/star/2.7.8a/STAR-2.7.8a/bin/Linux_x86_64_static")

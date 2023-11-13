@@ -13,10 +13,10 @@ if (node_name == "undefined") then
 end
 
 if (mode() == "load") then
-    LmodMessage("Loading LIBD module for spaceranger/2.1.0")
+    LmodMessage("Loading LIBD SLURM module for spaceranger/2.1.0")
     LmodMessage("Reference files, for use with the '--transcriptome' argument, can be accessed or downloaded into /dcs04/lieber/lcolladotor/annotationFiles_LIBD001/10x.")
 elseif (mode() == "unload") then
-    LmodMessage("Unloading LIBD module for spaceranger/2.1.0")
+    LmodMessage("Unloading LIBD SLURM module for spaceranger/2.1.0")
 end
 
 prepend_path("PATH", "/jhpce/shared/libd/core/spaceranger/2.1.0/spaceranger-2.1.0")

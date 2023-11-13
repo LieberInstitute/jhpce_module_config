@@ -15,5 +15,5 @@ if (node_name == "undefined") then
     LmodError("This package can only be loaded on a compute or transfer node. Please use a SLURM command (srun, sbatch, salloc) to a compute or transfer node.")
 end
 
-LmodMessage("Loading LIBD module for PRSice/2.2.13")
+LmodMessage("Loading LIBD SLURM module for PRSice/2.2.13")
 prepend_path("PATH", "/jhpce/shared/libd/core/PRSice/2.2.13/PRSice-local/")

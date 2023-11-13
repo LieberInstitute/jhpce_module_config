@@ -11,10 +11,10 @@ if (node_name == "undefined") then
 end
 
 if (mode() == "load") then
-    LmodMessage("Loading LIBD module for methyldackel/0.5.2")
+    LmodMessage("Loading LIBD SLURM module for methyldackel/0.5.2")
     LmodMessage("Note that the software is invoked as 'MethylDackel', not 'methyldackel'.")
 elseif (mode() == "unload") then
-    LmodMessage("Unloading LIBD module for methyldackel/0.5.2")
+    LmodMessage("Unloading LIBD SLURM module for methyldackel/0.5.2")
 end
 
 prepend_path("PATH", "/jhpce/shared/libd/core/methyldackel/0.5.2")

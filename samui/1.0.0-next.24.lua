@@ -10,9 +10,9 @@ if (node_name == "undefined") then
 end
 
 if (mode() == "load") then
-    LmodMessage("Loading LIBD module for samui/1.0.0-next.24")
+    LmodMessage("Loading LIBD SLURM module for samui/1.0.0-next.24")
 elseif (mode() == "unload") then
-    LmodMessage("Unloading LIBD module for samui/1.0.0-next.24")
+    LmodMessage("Unloading LIBD SLURM module for samui/1.0.0-next.24")
 end
 
 -- Directly activate or deactivate the conda environment

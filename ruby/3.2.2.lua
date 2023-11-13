@@ -14,7 +14,7 @@ if (node_name == "undefined") then
     LmodError("This package can only be loaded on a compute or transfer node. Please use a SLURM command (srun, sbatch, salloc) to a compute or transfer node.")
 end
 
-LmodMessage("Loading LIBD module for ruby/3.2.2")
+LmodMessage("Loading LIBD SLURM module for ruby/3.2.2")
 prepend_path("PATH", "/jhpce/shared/libd/core/ruby/3.2.2/rubyinstall/bin")
 prepend_path("MANPATH","/jhpce/shared/libd/core/ruby/3.2.2/rubyinstall/share/man/man1")
 

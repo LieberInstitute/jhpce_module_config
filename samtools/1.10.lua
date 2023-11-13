@@ -15,9 +15,9 @@ if (node_name == "undefined") then
 end
 
 if (mode() == "load") then
-    LmodMessage("Loading LIBD module for samtools/1.10")
+    LmodMessage("Loading LIBD SLURM module for samtools/1.10")
 elseif (mode() == "unload") then
-    LmodMessage("Unloading LIBD module for samtools/1.10")
+    LmodMessage("Unloading LIBD SLURM module for samtools/1.10")
 end
 
 prepend_path("PATH", "/jhpce/shared/libd/core/samtools/1.10/bin")

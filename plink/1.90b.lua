@@ -13,10 +13,10 @@ if (node_name == "undefined") then
 end
 
 if (mode() == "load") then
-    LmodMessage("Loading LIBD module for plink/1.90b")
+    LmodMessage("Loading LIBD SLURM module for plink/1.90b")
     LmodMessage("Plink 1.9 is invoked with the command 'plink'.")
 elseif (mode() == "unload") then
-    LmodMessage("Unloading LIBD module for plink/1.90b")
+    LmodMessage("Unloading LIBD SLURM module for plink/1.90b")
 end
 
 prepend_path("PATH", "/jhpce/shared/libd/core/plink/1.90b")

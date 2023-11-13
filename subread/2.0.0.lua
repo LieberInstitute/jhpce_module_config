@@ -15,9 +15,9 @@ if (node_name == "undefined") then
 end
 
 if (mode() == "load") then
-    LmodMessage("Loading LIBD module for Subread/2.0.0")
+    LmodMessage("Loading LIBD SLURM module for Subread/2.0.0")
 elseif (mode() == "unload") then
-    LmodMessage("Unloading LIBD module for Subread/2.0.0")
+    LmodMessage("Unloading LIBD SLURM module for Subread/2.0.0")
 end
 
 prepend_path("PATH", "/jhpce/shared/libd/core/subread/2.0.0/subread-2.0.0-Linux-x86_64/bin")

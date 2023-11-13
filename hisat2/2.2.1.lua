@@ -16,5 +16,5 @@ end
 
 load('python/3.9.14')
 
-LmodMessage("Loading LIBD module for HISAT2/2.2.1")
+LmodMessage("Loading LIBD SLURM module for HISAT2/2.2.1")
 prepend_path("PATH", "/jhpce/shared/libd/core/hisat2/2.2.1/hisat2-2.2.1")

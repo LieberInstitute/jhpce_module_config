@@ -8,9 +8,9 @@ if (node_name == "undefined") then
 end
 
 if (mode() == "load") then
-    LmodMessage("Loading LIBD module for tensorQTL/1.0.8")
+    LmodMessage("Loading LIBD SLURM module for tensorQTL/1.0.8")
 elseif (mode() == "unload") then
-    LmodMessage("Unloading LIBD module for tensorQTL/1.0.8")
+    LmodMessage("Unloading LIBD SLURM module for tensorQTL/1.0.8")
 end
 
 -- Directly activate or deactivate the conda environment

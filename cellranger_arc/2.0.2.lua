@@ -13,10 +13,10 @@ if (node_name == "undefined") then
 end
 
 if (mode() == "load") then
-    LmodMessage("Loading LIBD module for cellranger_arc/2.0.2")
+    LmodMessage("Loading LIBD SLURM module for cellranger_arc/2.0.2")
     LmodMessage("Reference files, for use with the '--transcriptome' argument, can be accessed or downloaded into /dcs04/lieber/lcolladotor/annotationFiles_LIBD001/10x.")
 elseif (mode() == "unload") then
-    LmodMessage("Unloading LIBD module for cellranger_arc/2.0.2")
+    LmodMessage("Unloading LIBD SLURM module for cellranger_arc/2.0.2")
 end
 
 prepend_path("PATH", "/jhpce/shared/libd/core/cellranger_arc/2.0.2/cellranger-arc-2.0.2")

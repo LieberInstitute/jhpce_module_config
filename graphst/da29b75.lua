@@ -10,10 +10,10 @@ if (node_name == "undefined") then
 end
 
 if (mode() == "load") then
-    LmodMessage("Loading LIBD module for graphst/da29b75")
+    LmodMessage("Loading LIBD SLURM module for graphst/da29b75")
     LmodMessage("GPU support with pytorch requires CUDA >= 11.3.")
 elseif (mode() == "unload") then
-    LmodMessage("Unloading LIBD module for graphst/da29b75")
+    LmodMessage("Unloading LIBD SLURM module for graphst/da29b75")
 end
 
 -- Directly activate or deactivate the conda environment

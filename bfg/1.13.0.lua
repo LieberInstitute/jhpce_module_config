@@ -14,6 +14,6 @@ if (node_name == "undefined") then
     LmodError("This package can only be loaded on a compute or transfer node. Please use a SLURM command (srun, sbatch, salloc) to a compute or transfer node.")
 end
 
-LmodMessage("Loading LIBD module for bfg/1.13.0")
+LmodMessage("Loading LIBD SLURM module for bfg/1.13.0")
 prepend_path("PATH", "/jhpce/shared/libd/core/bfg/1.13.0")
 LmodMessage("Use with `java -jar /jhpce/shared/libd/core/bfg/1.13.0/bfg.jar`")

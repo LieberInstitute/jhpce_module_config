@@ -15,9 +15,9 @@ if (node_name == "undefined") then
 end
 
 if (mode() == "load") then
-    LmodMessage("Loading LIBD module for Trimmomatic/0.39")
+    LmodMessage("Loading LIBD SLURM module for Trimmomatic/0.39")
 elseif (mode() == "unload") then
-    LmodMessage("Unloading LIBD module for Trimmomatic/0.39")
+    LmodMessage("Unloading LIBD SLURM module for Trimmomatic/0.39")
 end
 
 prepend_path("PATH", "/jhpce/shared/libd/core/Trimmomatic/0.39/Trimmomatic-0.39")

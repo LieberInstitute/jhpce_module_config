@@ -13,9 +13,9 @@ if (node_name == "undefined") then
 end
 
 if (mode() == "load") then
-    LmodMessage("Loading LIBD module for samblaster/0.1.26")
+    LmodMessage("Loading LIBD SLURM module for samblaster/0.1.26")
 elseif (mode() == "unload") then
-    LmodMessage("Unloading LIBD module for samblaster/0.1.26")
+    LmodMessage("Unloading LIBD SLURM module for samblaster/0.1.26")
 end
 
 prepend_path("PATH", "/jhpce/shared/libd/core/samblaster/0.1.26/samblaster-v.0.1.26")

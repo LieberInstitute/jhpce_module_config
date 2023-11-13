@@ -15,5 +15,5 @@ if (node_name == "undefined") then
     LmodError("This package can only be loaded on a compute or transfer node. Please use a SLURM command (srun, sbatch, salloc) to a compute or transfer node.")
 end
 
-LmodMessage("Loading LIBD module for qctool/2.0.7")
+LmodMessage("Loading LIBD SLURM module for qctool/2.0.7")
 prepend_path("PATH", "/jhpce/shared/libd/core/qctool/2.0.7/qctool/build/release/")

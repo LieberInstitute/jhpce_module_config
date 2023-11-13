@@ -15,9 +15,9 @@ if (node_name == "undefined") then
 end
 
 if (mode() == "load") then
-    LmodMessage("Loading LIBD module for Salmon/1.10.1")
+    LmodMessage("Loading LIBD SLURM module for Salmon/1.10.1")
 elseif (mode() == "unload") then
-    LmodMessage("Unloading LIBD module for Salmon/1.10.1")
+    LmodMessage("Unloading LIBD SLURM module for Salmon/1.10.1")
 end
 
 prepend_path("PATH", "/jhpce/shared/libd/core/Salmon/1.10.1/bin")

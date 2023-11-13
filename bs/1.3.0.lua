@@ -14,5 +14,5 @@ if (node_name == "undefined") then
     LmodError("This package can only be loaded on a compute or transfer node. Please use a SLURM command (srun, sbatch, salloc) to a compute or transfer node.")
 end
 
-LmodMessage("Loading LIBD module for bs/1.3.0")
+LmodMessage("Loading LIBD SLURM module for bs/1.3.0")
 prepend_path("PATH", "/jhpce/shared/libd/core/bs/1.3.0/bin")

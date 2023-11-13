@@ -14,5 +14,5 @@ if (node_name == "undefined") then
     LmodError("This package can only be loaded on a compute or transfer node. Please use a SLURM command (srun, sbatch, salloc) to a compute or transfer node.")
 end
 
-LmodMessage("Loading LIBD module for gffread/github [a3fd02f]")
+LmodMessage("Loading LIBD SLURM module for gffread/github [a3fd02f]")
 prepend_path("PATH", "/jhpce/shared/libd/core/gffread/github/gffread")

@@ -14,7 +14,7 @@ if (node_name == "undefined") then
     LmodError("This package can only be loaded on a compute or transfer node. Please use a SLURM command (srun, sbatch, salloc) to a compute or transfer node.")
 end
 
-LmodMessage("Loading LIBD module for BCFTools/1.10.2")
+LmodMessage("Loading LIBD SLURM module for BCFTools/1.10.2")
 prepend_path("PATH", "/jhpce/shared/libd/core/bcftools/1.10.2/bin")
 prepend_path("MANPATH","/jhpce/shared/libd/core/bcftools/1.10.2/share/man/man1")
 setenv("BCFTOOLS_PLUGINS", "/jhpce/shared/libd/core/bcftools/1.10.2/bcftools-1.10.2/plugins")

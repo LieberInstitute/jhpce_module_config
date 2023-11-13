@@ -8,9 +8,9 @@ if (node_name == "undefined") then
 end
 
 if (mode() == "load") then
-    LmodMessage("Loading LIBD module for cellpose/2.2.2")
+    LmodMessage("Loading LIBD SLURM module for cellpose/2.2.2")
 elseif (mode() == "unload") then
-    LmodMessage("Unloading LIBD module for cellpose/2.2.2")
+    LmodMessage("Unloading LIBD SLURM module for cellpose/2.2.2")
 end
 
 -- Directly activate or deactivate the conda environment

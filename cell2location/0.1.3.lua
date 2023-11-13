@@ -10,9 +10,9 @@ if (node_name == "undefined") then
 end
 
 if (mode() == "load") then
-    LmodMessage("Loading LIBD module for cell2location/0.1.3")
+    LmodMessage("Loading LIBD SLURM module for cell2location/0.1.3")
 elseif (mode() == "unload") then
-    LmodMessage("Unloading LIBD module for cell2location/0.1.3")
+    LmodMessage("Unloading LIBD SLURM module for cell2location/0.1.3")
 end
 
 -- Directly activate or deactivate the conda environment

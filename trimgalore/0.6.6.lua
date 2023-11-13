@@ -10,9 +10,9 @@ if (node_name == "undefined") then
 end
 
 if (mode() == "load") then
-    LmodMessage("Loading LIBD module for trimgalore/0.6.6")
+    LmodMessage("Loading LIBD SLURM module for trimgalore/0.6.6")
 elseif (mode() == "unload") then
-    LmodMessage("Unloading LIBD module for trimgalore/0.6.6")
+    LmodMessage("Unloading LIBD SLURM module for trimgalore/0.6.6")
 end
 
 load('fastqc/0.12.1')

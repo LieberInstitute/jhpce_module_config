@@ -15,8 +15,8 @@ if (node_name == "undefined") then
 end
 
 if (mode() == "load") then
-    LmodMessage("Loading LIBD module for FastQC/0.11.8")
+    LmodMessage("Loading LIBD SLURM module for FastQC/0.11.8")
 elseif (mode() == "unload") then
-    LmodMessage("Unloading LIBD module for FastQC/0.11.8")
+    LmodMessage("Unloading LIBD SLURM module for FastQC/0.11.8")
 end
 prepend_path("PATH", "/jhpce/shared/libd/core/FastQC/0.11.8/FastQC")

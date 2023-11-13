@@ -14,6 +14,6 @@ if (node_name == "undefined") then
     LmodError("This package can only be loaded on a compute or transfer node. Please use a SLURM command (srun, sbatch, salloc) to a compute or transfer node.")
 end
 
-LmodMessage("Loading LIBD module for git-lfs/2.8.0")
+LmodMessage("Loading LIBD SLURM module for git-lfs/2.8.0")
 load('git')
 prepend_path("PATH", "/jhpce/shared/libd/core/git-lfs/2.8.0/git-lfs-files")

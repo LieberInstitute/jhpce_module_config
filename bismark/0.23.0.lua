@@ -11,9 +11,9 @@ if (node_name == "undefined") then
 end
 
 if (mode() == "load") then
-    LmodMessage("Loading LIBD module for bismark/0.23.0")
+    LmodMessage("Loading LIBD SLURM module for bismark/0.23.0")
 elseif (mode() == "unload") then
-    LmodMessage("Unloading LIBD module for bismark/0.23.0")
+    LmodMessage("Unloading LIBD SLURM module for bismark/0.23.0")
 end
 
 prepend_path("PATH", "/jhpce/shared/libd/core/bismark/0.23.0/Bismark-0.23.0")

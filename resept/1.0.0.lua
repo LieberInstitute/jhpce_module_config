@@ -9,7 +9,7 @@ if (node_name == "undefined") then
     LmodError("This package can only be loaded on a compute or transfer node. Please use a SLURM command (srun, sbatch, salloc) to a compute or transfer node.")
 end
 
-LmodMessage("Loading LIBD module for resept/1.0.0")
+LmodMessage("Loading LIBD SLURM module for resept/1.0.0")
 LmodMessage("Note: python scripts should be invoked using 'which':")
 LmodMessage("    'python $(which RGB_images_pipeline.py)', rather than:")
 LmodMessage("    'python RGB_images_pipeline.py'.")

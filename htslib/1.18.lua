@@ -15,9 +15,9 @@ if (node_name == "undefined") then
 end
 
 if (mode() == "load") then
-    LmodMessage("Loading LIBD module for htslib/1.18")
+    LmodMessage("Loading LIBD SLURM module for htslib/1.18")
 elseif (mode() == "unload") then
-    LmodMessage("Unloading LIBD module for htslib/1.18")
+    LmodMessage("Unloading LIBD SLURM module for htslib/1.18")
 end
 
 prepend_path("PATH", "/jhpce/shared/libd/core/htslib/1.18/bin")
