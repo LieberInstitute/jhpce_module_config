@@ -16,7 +16,7 @@ end
 
 if (mode() == "load") then
     LmodMessage("Loading LIBD SLURM module for nextflow/23.10.0")
-    LmodMessage('## To deal with running nextflow without requesting much more memory check https://jhpce.jhu.edu/question/why-do-i-get-memory-errors-when-running-java/. You might want to use something like: export _JAVA_OPTIONS="-Xms5g -Xmx6g"')
+    LmodMessage('## To deal with running nextflow without requesting much more memory check https://jhpce.jhu.edu/question/why-do-i-get-memory-errors-when-running-java/. Note, however, that Nextflow accepts the "NXF_JVM_ARGS" environment variable instead of "_JAVA_OPTIONS". You might want to use something like: export NXF_JVM_ARGS="-Xms5g -Xmx6g".')
 elseif (mode() == "unload") then
     LmodMessage("Unloading LIBD SLURM module for nextflow/23.10.0")
 end
