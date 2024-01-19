@@ -21,10 +21,6 @@ elseif (mode() == "unload") then
     LmodMessage("Unloading LIBD SLURM module for nextflow/23.10.0")
 end
 
--- The 'conda_R' module seems to interfere with first-time execution of
--- nextflow when '_JAVA_OPTIONS' is set. To avoid this confusing scenario,
--- make sure 'conda_R' is not loaded while using nextflow
-unload('conda_R')
 load('java/18')
 
 prepend_path("PATH", "/jhpce/shared/libd/core/nextflow/23.10.0")
