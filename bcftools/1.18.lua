@@ -20,4 +20,4 @@ end
 
 prepend_path("PATH", "/jhpce/shared/libd/core/bcftools/1.18/bin")
 prepend_path("MANPATH","/jhpce/shared/libd/core/bcftools/1.18/share/man/man1")
-setenv("BCFTOOLS_PLUGINS", "/jhpce/shared/libd/core/bcftools/1.18/bcftools-1.13/plugins")
+setenv("BCFTOOLS_PLUGINS", "/jhpce/shared/libd/core/bcftools/1.18/bcftools-1.18/plugins")
