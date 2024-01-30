@@ -2,7 +2,7 @@
 -- vim:ft=lua:et:ts=4
 
 help([[
-This module loads nextflow version 23.10.0.
+This module loads nextflow version 23.10.0 and nf-test 0.8.4.
 ]])
 
 whatis("Nextflow")
