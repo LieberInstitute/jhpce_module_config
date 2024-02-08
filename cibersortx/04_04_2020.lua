@@ -10,7 +10,13 @@ if (node_name == "undefined") then
 end
 
 if (mode() == "load") then
-    LmodMessage("Loading LIBD SLURM module for cibersortx/04_04_2020")
+    LmodMessage("Loading LIBD SLURM module for cibersortx/04_04_2020\n")
+    LmodMessage("Software is invoked by calling 'CIBERSORTxFractions'. It runs inside a")
+    LmodMessage("Singularity container, which by default has the fastscratch space mounted")
+    LmodMessage("(run 'echo $MYSCRATCH' to see the exact path), and therefore CIBERSORTx may only")
+    LmodMessage("recognize input and output files under this directory.\n")
+    LmodMessage("To mount custom paths or manually access the Singularity image directly, use")
+    LmodMessage("    singularity exec /jhpce/shared/libd/core/cibersortx/04_04_2020/fractions_latest.sif /src/CIBERSORTxFractions")
 elseif (mode() == "unload") then
     LmodMessage("Unloading LIBD SLURM module for cibersortx/04_04_2020")
 end
