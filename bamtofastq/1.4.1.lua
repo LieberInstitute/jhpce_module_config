@@ -2,7 +2,7 @@
 -- vim:ft=lua:et:ts=4
 
 help([[
-This module loads bamtofastq version 1.3.2.
+This module loads bamtofastq version 1.4.1.
 ]])
 
 -- Check if the env var SLURMD_NODENAME exists to indirectly verify if a user
@@ -12,5 +12,5 @@ if (node_name == "undefined") then
     LmodError("This package can only be loaded on a compute or transfer node. Please use a SLURM command (srun, sbatch, salloc) to a compute or transfer node.")
 end
 
-LmodMessage("Loading LIBD SLURM module for bamtofastq/1.3.2")
-prepend_path("PATH", "/jhpce/shared/libd/core/bamtofastq/1.3.2")
+LmodMessage("Loading LIBD SLURM module for bamtofastq/1.4.1")
+prepend_path("PATH", "/jhpce/shared/libd/core/bamtofastq/1.4.1")
