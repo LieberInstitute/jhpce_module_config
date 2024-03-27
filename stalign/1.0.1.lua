@@ -15,6 +15,9 @@ elseif (mode() == "unload") then
     LmodMessage("Unloading LIBD SLURM module for stalign/1.0.1")
 end
 
+-- To make it easier to directly invoke python scripts in the repo
+prepend_path('PATH', '/jhpce/shared/libd/core/stalign/1.0.1/STalign/STalign')
+
 -- Directly activate or deactivate the conda environment
 always_load("conda/3-23.3.1")
 execute {cmd="conda activate /jhpce/shared/libd/core/stalign/1.0.1/stalign_env", modeA={"load"}}
