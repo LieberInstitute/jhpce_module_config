@@ -1,6 +1,6 @@
 # JHPCE module config
 
-This repository contains the [Lmod module](https://lmod.readthedocs.io/) configuration files (`.lua`) for modules contributed to [JHPCE](http://www.jhpce.jhu.edu/) by members of the [R/Bioconductor-powered Team Data Science](https://lcolladotor.github.io)  at the [Lieber Institute for Brain Development](https://www.libd.org/).
+This repository contains the [Lmod module](https://lmod.readthedocs.io/) configuration files (`.lua`) for modules contributed to [JHPCE](https://jhpce.jhu.edu/) mostly by members of the [R/Bioconductor-powered Team Data Science](https://lcolladotor.github.io) at the [Lieber Institute for Brain Development](https://www.libd.org/). Though other people from LIBD can contribute to these modules and request to be added to the `lieber_modules` user group. 
 
 The source files are hosted in the [jhpce_module_source](https://github.com/LieberInstitute/jhpce_module_source) GitHub repository.
 
@@ -77,7 +77,7 @@ Sizeof {int, long, long long, void*, size_t, off_t}: {4, 8, 8, 8, 8, 8}
 If you want to always include our modules, you can edit your `.bashrc` file and add the following lines:
 
 ```bash
-## List the LIBD modules by default when inside qrsh/qsub
+## List the LIBD modules by default when inside srun/sbatch
 if [[ $HOSTNAME == compute-* ]] || [[ $HOSTNAME == transfer-* ]]; then
     echo "Adding LIBD modules"
     module use /jhpce/shared/libd/modulefiles
@@ -116,6 +116,28 @@ __Step 4.__ Make sure that the permissions are set correctly at the end.
 chmod 775 -R hisat2
 ```
 
+# `lieber_modules` membership rules
+
+To be added to `lieber_modules` JHPCE user group you have to agree to:
+
+1. Be subscribed to the `bithelp` mailing list.
+1. Respond to questions from users who have questions about modules you contributed.
+1. Be willing to create modules for new versions of the software or help advice new maintainers if you are passing down the torch to someone new.
+
+If you do not agree to these rules, worry not! We will still gladly train and guide you to make your own private modules with files hosted elsewhere. Please sign up for a [Data Science guidance session](https://lcolladotor.github.io/bioc_team_ds/data-science-guidance-sessions.html) with Nick Eagles after having watched the relevant `module`-related videos from the [LIBD rstats club - JHPCE playlist](https://www.youtube.com/watch?v=mWYDMp0jp8Q&list=PLNNI62fcZPdAslHFllqv0-2iZqby1h0CV).
+
+As noted by Mark Miller from JHPCE BitSupport, using shared modules has some advantages, such as:
+
+> * It prevents duplication of effort, where 2 people on 2 different teams need the same software and build the same duplicate module.
+> * It allows for the effort put into building the module to be used and appreciated by others.
+> * Having a module used by more people will help to encourage the maintainer to keep the module up to date.
+> * We do have the annual JHPCE High Achiever award that has been awarded to those that have contributed modules. 😊
+
+To be added to `lieber_modules`, please send an email to BitHelp mentioning that you agree to the rules stated above and cc Leonardo Collado Torres.
+
+Welcome to the club! We are glad to have you! 🙌🏽
+
+PS This whole process is inspired by the rules you have to agree to when submitting an [R package to Bioconductor](https://github.com/Bioconductor/Contributions/issues/new/choose).
 
 # Contributors
 
@@ -123,10 +145,12 @@ chmod 775 -R hisat2
 
 - [Nick Eagles](https://nick-eagles.github.io/)
 - [Leonardo Collado Torres](http://lcolladotor.github.io)
+- [Geo Pertea](https://github.com/gpertea)
+- [Ryan Miller](https://github.com/RyAMiller)
 
 ## Former
 
-- [Emily E Burke](https://www.libd.org/team/emily-e-burke/)
+- [Emily E Burke](https://github.com/emilyburke)
 - [Andrew E Jaffe](http://aejaffe.com/)
 
 # JHPCE location
