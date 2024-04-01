@@ -15,5 +15,4 @@ if (node_name == "undefined") then
 end
 
 LmodMessage("Loading LIBD SLURM module for git-status-size/github")
-load('git')
 prepend_path("PATH", "/jhpce/shared/libd/core/git-status-size/github/git-status-size")

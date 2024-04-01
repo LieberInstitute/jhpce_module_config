@@ -11,9 +11,9 @@ if (node_name == "undefined") then
 end
 
 if (mode() == "load") then
-    LmodMessage("Loading LIBD module for gffread/0.12.7")
+    LmodMessage("Loading LIBD SLURM module for gffread/0.12.7")
 elseif (mode() == "unload") then
-    LmodMessage("Unloading LIBD module for gffread/0.12.7")
+    LmodMessage("Unloading LIBD SLURM module for gffread/0.12.7")
 end
 
 prepend_path("PATH", "/jhpce/shared/libd/core/gffread/0.12.7/gffread-0.12.7.Linux_x86_64")
