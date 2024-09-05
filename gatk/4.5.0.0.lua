@@ -18,6 +18,8 @@ always_load("conda/3-23.3.1")
 execute {cmd="conda activate /jhpce/shared/libd/core/gatk/4.5.0.0/gatk_env", modeA={"load"}}
 execute {cmd="conda deactivate", modeA={"unload"}}
 
+load("java/19")
+
 -- For gatk binary itself
 prepend_path('PATH', '/jhpce/shared/libd/core/gatk/4.5.0.0/gatk')
 
