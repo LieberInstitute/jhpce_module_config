@@ -16,6 +16,9 @@ end
 -- To add 'bgzip' and 'tabix' to the PATH
 load("htslib/1.18")
 
+-- For preparing input data to FICTURE
+load("spatula/1.0.0")
+
 -- Directly activate or deactivate the conda environment
 always_load("conda/3-24.3.0")
 execute {cmd="conda activate /jhpce/shared/libd/core/ficture/0.0.3.1/ficture_env", modeA={"load"}}
