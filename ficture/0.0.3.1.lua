@@ -17,7 +17,7 @@ end
 load("htslib/1.18")
 
 -- For preparing input data to FICTURE
-load("spatula/1.0.0")
+load("spatula/7fe7171")
 
 -- Directly activate or deactivate the conda environment
 always_load("conda/3-24.3.0")
