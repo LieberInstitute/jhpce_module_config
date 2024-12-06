@@ -1,5 +1,5 @@
 help([[
-This module loads several python-based tools for Visium HD analysis, including FICTURE, bin2cell, HERGAST, and ENACT.
+This module loads several python-based tools for Visium HD analysis, including FICTURE, bin2cell, HERGAST, ENACT, and NEST.
 ]])
 
 if not string.match(os.getenv("HOSTNAME"),"compute") and not  string.match(os.getenv("HOSTNAME"),"transfer") then  
@@ -18,8 +18,9 @@ always_load("conda/3-24.3.0")
 execute {cmd="conda activate /jhpce/shared/libd/core/visium_hd/1.0/hd_env", modeA={"load"}}
 execute {cmd="conda deactivate", modeA={"unload"}}
 
--- For 'spatula'
+-- For 'spatula' and 'NEST'
 prepend_path('PATH', '/jhpce/shared/libd/core/visium_hd/1.0/spatula/bin')
+prepend_path('PATH', '/jhpce/shared/libd/core/visium_hd/1.0/NEST')
 
 -- Don't try to depend on user-installed python packages
 setenv("PYTHONNOUSERSITE", "anything")
