@@ -18,6 +18,9 @@ always_load("conda/3-24.3.0")
 execute {cmd="conda activate /jhpce/shared/libd/core/visium_hd/1.0/hd_env", modeA={"load"}}
 execute {cmd="conda deactivate", modeA={"unload"}}
 
+-- To add 'bgzip' and 'tabix' to the PATH for FICTURE
+load("htslib/1.18")
+
 -- For 'spatula' and 'NEST'
 prepend_path('PATH', '/jhpce/shared/libd/core/visium_hd/1.0/spatula/bin')
 prepend_path('PATH', '/jhpce/shared/libd/core/visium_hd/1.0/NEST')
