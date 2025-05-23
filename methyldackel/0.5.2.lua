@@ -8,6 +8,8 @@ if not string.match(os.getenv("HOSTNAME"),"compute") and not  string.match(os.ge
 This package can only be loaded on a compute or transfer node. Please use qrsh to connect to a valid compute or transfer node.")
 end
 
+load('htslib/1.18')
+
 if (mode() == "load") then
     LmodMessage("Loading LIBD SLURM module for methyldackel/0.5.2")
     LmodMessage("Note that the software is invoked as 'MethylDackel', not 'methyldackel'.")
