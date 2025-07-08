@@ -14,7 +14,7 @@ if (mode() == "load") then
     LmodMessage("Loading LIBD SLURM module for xeniumranger/3.1.1")
     LmodMessage("Reference files, for use with the '--transcriptome' argument, can be accessed or downloaded into /dcs04/lieber/lcolladotor/annotationFiles_LIBD001/10x.")
 elseif (mode() == "unload") then
-    LmodMessage("Unloading LIBD SLURM module for xeniumranger/3.1.1)
+    LmodMessage("Unloading LIBD SLURM module for xeniumranger/3.1.1")
 end
 
 prepend_path("PATH", "/jhpce/shared/libd/core/xeniumranger/3.1.1/xeniumranger-3.1.1/bin")
