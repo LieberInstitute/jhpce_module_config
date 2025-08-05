@@ -21,9 +21,9 @@ execute {cmd="conda deactivate", modeA={"unload"}}
 -- To add 'bgzip' and 'tabix' to the PATH for FICTURE
 load("htslib/1.18")
 
--- For 'spatula' and 'NEST'
+-- For 'spatula' and 'CellNEST'
 prepend_path('PATH', '/jhpce/shared/libd/core/visium_hd/1.0/spatula/bin')
-prepend_path('PATH', '/jhpce/shared/libd/core/visium_hd/1.0/NEST')
+prepend_path('PATH', '/jhpce/shared/libd/core/visium_hd/1.0/CellNEST')
 
 -- Don't try to depend on user-installed python packages
 setenv("PYTHONNOUSERSITE", "anything")
