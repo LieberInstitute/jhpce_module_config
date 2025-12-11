@@ -4,7 +4,7 @@ This module loads 'r_nac', a conda environment for R designed for the spatialNAc
 
 if not string.match(os.getenv("HOSTNAME"),"compute") and not  string.match(os.getenv("HOSTNAME"),"transfer") then  
     LmodError("\
-This package can only be loaded on a compute or transfer node. Please use qrsh to connect to a valid compute or transfer node.")
+This package can only be loaded on a compute or transfer node. Please use srun to connect to a valid compute or transfer node.")
 end
 
 if (mode() == "load") then
