@@ -1,5 +1,5 @@
 help([[
-This module loads 2 Illumina CLI tools: BaseSpace CLI v1.7.0 and ICA CLI v2.48.0
+This module loads 3 Illumina CLI tools: BaseSpace CLI v1.7.0, ICA CLI v2.48.0, and DRAGEN software mode 4.6.2.
 ]])
 
 if not string.match(os.getenv("HOSTNAME"),"compute") and not  string.match(os.getenv("HOSTNAME"),"transfer") then  
@@ -14,3 +14,6 @@ elseif (mode() == "unload") then
 end
 
 prepend_path("PATH", "/jhpce/shared/libd/core/illumina_cli/1.0/bin")
+-- The binary has dynamically resolved dependencies (at run time), so I can't
+-- simply copy it to the above path to keep things organized and simple
+prepend_path("PATH", "/jhpce/shared/libd/core/illumina_cli/1.0/dragen-softwaremode-4.6.2.el8.x86_64/bin")
